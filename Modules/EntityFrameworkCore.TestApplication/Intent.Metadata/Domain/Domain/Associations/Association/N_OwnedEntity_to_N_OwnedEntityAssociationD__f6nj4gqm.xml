@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="365535bf-7110-4684-8481-046d555dd47e">
+  <sourceEnd id="2a984bc9-dcbe-4770-bd83-989cde9d20ae" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>N_OwnedEntity</name>
+    <display>N_OwnedEntity: N_OwnedEntity</display>
+    <order>1</order>
+    <typeReference id="7d7629c4-21af-42e4-953a-1b5eaa2cc34b">
+      <typeId>bfbb461f-95e3-49ee-a2c4-d07a1e9795bf</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Domain</typePackageName>
+      <typePackageId>8ca37b32-c4a3-4856-919f-e2190fa2d337</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+  </sourceEnd>
+  <targetEnd id="365535bf-7110-4684-8481-046d555dd47e" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>N_OwnedEntityAssociationD</name>
+    <display>N_OwnedEntityAssociationD: N_OwnedEntityAssociationD</display>
+    <order>4</order>
+    <typeReference id="e1dd1559-fc22-4003-9db8-701e08e60a33">
+      <typeId>92c46bdc-7d00-4c66-a09c-52c91295c66f</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Domain</typePackageName>
+      <typePackageId>8ca37b32-c4a3-4856-919f-e2190fa2d337</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>
