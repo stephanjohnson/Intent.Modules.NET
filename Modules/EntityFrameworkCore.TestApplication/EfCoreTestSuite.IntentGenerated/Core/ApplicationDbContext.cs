@@ -42,6 +42,9 @@ namespace EfCoreTestSuite.IntentGenerated.Core
         public DbSet<K_SelfReference> K_SelfReferences { get; set; }
         public DbSet<L_SelfReferenceMultiple> L_SelfReferenceMultiples { get; set; }
         public DbSet<M_SelfReferenceBiNav> M_SelfReferenceBiNavs { get; set; }
+        public DbSet<N_NestedOwnedAssocationOwner> N_NestedOwnedAssocationOwners { get; set; }
+        public DbSet<N_OwnedEntityAssociationA> N_OwnedEntityAssociationAs { get; set; }
+        public DbSet<N_OwnedEntityAssociationB> N_OwnedEntityAssociationBs { get; set; }
         public DbSet<PK_A_CompositeKey> PK_A_CompositeKeys { get; set; }
         public DbSet<PK_B_CompositeKey> PK_B_CompositeKeys { get; set; }
         public DbSet<PK_PrimaryKeyInt> PK_PrimaryKeyInts { get; set; }
@@ -85,6 +88,9 @@ namespace EfCoreTestSuite.IntentGenerated.Core
             modelBuilder.ApplyConfiguration(new K_SelfReferenceConfiguration());
             modelBuilder.ApplyConfiguration(new L_SelfReferenceMultipleConfiguration());
             modelBuilder.ApplyConfiguration(new M_SelfReferenceBiNavConfiguration());
+            modelBuilder.ApplyConfiguration(new N_NestedOwnedAssocationOwnerConfiguration());
+            modelBuilder.ApplyConfiguration(new N_OwnedEntityAssociationAConfiguration());
+            modelBuilder.ApplyConfiguration(new N_OwnedEntityAssociationBConfiguration());
             modelBuilder.ApplyConfiguration(new PK_A_CompositeKeyConfiguration());
             modelBuilder.ApplyConfiguration(new PK_B_CompositeKeyConfiguration());
             modelBuilder.ApplyConfiguration(new PK_PrimaryKeyIntConfiguration());

@@ -37,6 +37,9 @@ namespace EfCoreTestSuite.IntentGenerated.Core
         DbSet<K_SelfReference> K_SelfReferences { get; set; }
         DbSet<L_SelfReferenceMultiple> L_SelfReferenceMultiples { get; set; }
         DbSet<M_SelfReferenceBiNav> M_SelfReferenceBiNavs { get; set; }
+        DbSet<N_NestedOwnedAssocationOwner> N_NestedOwnedAssocationOwners { get; set; }
+        DbSet<N_OwnedEntityAssociationA> N_OwnedEntityAssociationAs { get; set; }
+        DbSet<N_OwnedEntityAssociationB> N_OwnedEntityAssociationBs { get; set; }
         DbSet<PK_A_CompositeKey> PK_A_CompositeKeys { get; set; }
         DbSet<PK_B_CompositeKey> PK_B_CompositeKeys { get; set; }
         DbSet<PK_PrimaryKeyInt> PK_PrimaryKeyInts { get; set; }
