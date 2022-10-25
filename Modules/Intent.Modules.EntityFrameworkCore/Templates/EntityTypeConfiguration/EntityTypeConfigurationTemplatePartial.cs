@@ -424,7 +424,7 @@ namespace Intent.Modules.EntityFrameworkCore.Templates.EntityTypeConfiguration
                         _ownedTypeConfigMethods.Add(@$"
         public void Configure{associationEnd.Name.ToPascalCase()}(OwnedNavigationBuilder<{GetOwnerEntity(associationEnd)}, {GetTypeName((IElement)associationEnd.Element)}> builder)
         {{
-            builder.WithOwner({(associationEnd.OtherEnd().IsNavigable ? $"x => x.{associationEnd.OtherEnd().Name.ToPascalCase()}" : "")}){(!IsValueObject(associationEnd.Element) && !ExecutionContext.Settings.GetDatabaseSettings().DatabaseProvider().IsCosmos() ? $".HasForeignKey({GetForeignKeyLambda(associationEnd)})" : "")};{string.Join(@"
+            builder.WithOwner({(associationEnd.OtherEnd().IsNavigable ? $"x => x.{associationEnd.OtherEnd().Name.ToPascalCase()}" : "")}){(!IsValueObject(associationEnd.Element) && !DoesHaveCosmosCompositeKey() ? $".HasForeignKey({GetForeignKeyLambda(associationEnd)})":string.Empty)};{string.Join(@"
             ", GetTypeConfiguration((IElement)associationEnd.Element))}
         }}");
                         statements.Add($"builder.OwnsOne(x => x.{associationEnd.Name.ToPascalCase()}, Configure{associationEnd.Name.ToPascalCase()})" +
@@ -485,7 +485,7 @@ namespace Intent.Modules.EntityFrameworkCore.Templates.EntityTypeConfiguration
                         _ownedTypeConfigMethods.Add(@$"
         public void Configure{associationEnd.Name.ToPascalCase()}(OwnedNavigationBuilder<{GetOwnerEntity(associationEnd)}, {GetTypeName((IElement)associationEnd.Element)}> builder)
         {{
-            builder.WithOwner({(associationEnd.OtherEnd().IsNavigable ? $"x => x.{associationEnd.OtherEnd().Name.ToPascalCase()}" : "")}){(!IsValueObject(associationEnd.Element) && !ExecutionContext.Settings.GetDatabaseSettings().DatabaseProvider().IsCosmos() ? $".HasForeignKey({GetForeignKeyLambda(associationEnd)})" : "")};{string.Join(@"
+            builder.WithOwner({(associationEnd.OtherEnd().IsNavigable ? $"x => x.{associationEnd.OtherEnd().Name.ToPascalCase()}" : "")}){(!IsValueObject(associationEnd.Element) && !DoesHaveCosmosCompositeKey() ? $".HasForeignKey({GetForeignKeyLambda(associationEnd)})" : "")};{string.Join(@"
             ", GetTypeConfiguration((IElement)associationEnd.Element))}
         }}");
                         return $@"
@@ -534,6 +534,14 @@ namespace Intent.Modules.EntityFrameworkCore.Templates.EntityTypeConfiguration
             ", statements)};";
         }
 
+        private bool DoesHaveCosmosCompositeKey()
+        { 
+            return ExecutionContext.Settings.GetDatabaseSettings().DatabaseProvider().IsCosmos()
+                 && Model.GetExplicitPrimaryKey().Count == 0 
+                 && HasIncomingGeneralization(Model)
+                 && Model.ParentClass == null;
+        }
+        
         private string GetOwnerEntity(AssociationEndModel associationEnd)
         {
             var element = (IElement)associationEnd.OtherEnd().Element;

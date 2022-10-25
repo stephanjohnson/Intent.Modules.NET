@@ -29,7 +29,7 @@ namespace EfCoreTestSuite.CosmosDb.IntentGenerated.Core
 
         public void ConfigureC_MultipleDependents(OwnedNavigationBuilder<C_RequiredComposite, C_MultipleDependent> builder)
         {
-            builder.WithOwner();
+            builder.WithOwner().HasForeignKey(x => x.C_RequiredCompositeId);
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.MultipleDependentAttr)

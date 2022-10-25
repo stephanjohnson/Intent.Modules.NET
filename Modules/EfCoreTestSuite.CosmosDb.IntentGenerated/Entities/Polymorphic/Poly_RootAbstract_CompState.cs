@@ -36,6 +36,6 @@ namespace EfCoreTestSuite.CosmosDb.IntentGenerated.Entities.Polymorphic
             }
         }
 
-
+        //public string PartitionKey { get; set; }
     }
 }
