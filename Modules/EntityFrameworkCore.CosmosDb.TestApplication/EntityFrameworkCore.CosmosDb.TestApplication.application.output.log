@@ -60,14 +60,6 @@
     </FileLog>
     <FileLog>
       <ProjectId>37916cea-3632-4b01-a96c-eba08f664511</ProjectId>
-      <CorrelationId>Intent.EntityFrameworkCore.EntityTypeConfiguration#ac315ad3-af1a-4809-98e2-97bd54f7593f</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Core/ClassAConfiguration.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ClassAConfiguration.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>37916cea-3632-4b01-a96c-eba08f664511</ProjectId>
       <CorrelationId>Intent.EntityFrameworkCore.EntityTypeConfiguration#4f1dae3f-6b97-438d-b672-1010ed38b67e</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Core/ConcreteBaseClassAssociatedConfiguration.cs</ApplicationRelativeFilePath>
@@ -224,6 +216,30 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Core/MIGRATION_README.txt</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>MIGRATION_README.txt</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>37916cea-3632-4b01-a96c-eba08f664511</ProjectId>
+      <CorrelationId>Intent.EntityFrameworkCore.EntityTypeConfiguration#ed6051c0-0c4c-4a83-9fee-3a4ad5337367</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Core/N_NestedOwnedAssocationOwnerConfiguration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>N_NestedOwnedAssocationOwnerConfiguration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>37916cea-3632-4b01-a96c-eba08f664511</ProjectId>
+      <CorrelationId>Intent.EntityFrameworkCore.EntityTypeConfiguration#23a3df88-4a4b-413e-9baf-805e03736b4c</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Core/N_OwnedEntityAssociationAConfiguration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>N_OwnedEntityAssociationAConfiguration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>37916cea-3632-4b01-a96c-eba08f664511</ProjectId>
+      <CorrelationId>Intent.EntityFrameworkCore.EntityTypeConfiguration#9eefa307-e78a-4572-b157-73452f611475</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Core/N_OwnedEntityAssociationBConfiguration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>N_OwnedEntityAssociationBConfiguration.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -988,122 +1004,146 @@
     </FileLog>
     <FileLog>
       <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
-      <CorrelationId>Intent.Entities.DomainEntity#ac315ad3-af1a-4809-98e2-97bd54f7593f</CorrelationId>
+      <CorrelationId>Intent.Entities.DomainEntityInterface#ed6051c0-0c4c-4a83-9fee-3a4ad5337367</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedComposition/ClassA.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>NestedComposition/ClassA.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/IN_NestedOwnedAssocationOwner.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/IN_NestedOwnedAssocationOwner.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
-      <CorrelationId>Intent.Entities.DomainEntityState#ac315ad3-af1a-4809-98e2-97bd54f7593f</CorrelationId>
+      <CorrelationId>Intent.Entities.DomainEntityInterface#1e0753f5-8c82-41da-93e2-f8b2dc9b93dd</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedComposition/ClassAState.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>NestedComposition/ClassAState.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/IN_OwnedEntity.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/IN_OwnedEntity.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
-      <CorrelationId>Intent.Entities.DomainEntity#012ac484-4858-45b9-ab8d-3c0e32fa2e73</CorrelationId>
+      <CorrelationId>Intent.Entities.DomainEntityInterface#23a3df88-4a4b-413e-9baf-805e03736b4c</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedComposition/ClassB.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>NestedComposition/ClassB.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/IN_OwnedEntityAssociationA.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/IN_OwnedEntityAssociationA.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
-      <CorrelationId>Intent.Entities.DomainEntityState#012ac484-4858-45b9-ab8d-3c0e32fa2e73</CorrelationId>
+      <CorrelationId>Intent.Entities.DomainEntityInterface#9eefa307-e78a-4572-b157-73452f611475</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedComposition/ClassBState.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>NestedComposition/ClassBState.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/IN_OwnedEntityAssociationB.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/IN_OwnedEntityAssociationB.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
-      <CorrelationId>Intent.Entities.DomainEntity#322ab6a2-4ab3-4e13-9e44-354dcc333c92</CorrelationId>
+      <CorrelationId>Intent.Entities.DomainEntityInterface#758e8032-b244-4090-8639-e09f3d5ee78d</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedComposition/ClassC.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>NestedComposition/ClassC.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/IN_OwnedEntityAssociationC.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/IN_OwnedEntityAssociationC.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
-      <CorrelationId>Intent.Entities.DomainEntityState#322ab6a2-4ab3-4e13-9e44-354dcc333c92</CorrelationId>
+      <CorrelationId>Intent.Entities.DomainEntityInterface#5484d871-2581-403a-ba6a-bd9ce5302049</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedComposition/ClassCState.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>NestedComposition/ClassCState.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/IN_OwnedEntityAssociationD.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/IN_OwnedEntityAssociationD.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
-      <CorrelationId>Intent.Entities.DomainEntity#f6cfbb0c-08c4-4b57-bff0-e57125782700</CorrelationId>
+      <CorrelationId>Intent.Entities.DomainEntity#ed6051c0-0c4c-4a83-9fee-3a4ad5337367</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedComposition/ClassD.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>NestedComposition/ClassD.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/N_NestedOwnedAssocationOwner.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/N_NestedOwnedAssocationOwner.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
-      <CorrelationId>Intent.Entities.DomainEntityState#f6cfbb0c-08c4-4b57-bff0-e57125782700</CorrelationId>
+      <CorrelationId>Intent.Entities.DomainEntityState#ed6051c0-0c4c-4a83-9fee-3a4ad5337367</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedComposition/ClassDState.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>NestedComposition/ClassDState.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/N_NestedOwnedAssocationOwnerState.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/N_NestedOwnedAssocationOwnerState.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
-      <CorrelationId>Intent.Entities.DomainEntity#84e2e545-10be-4229-8d85-bdb479ff61c6</CorrelationId>
+      <CorrelationId>Intent.Entities.DomainEntity#1e0753f5-8c82-41da-93e2-f8b2dc9b93dd</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedComposition/ClassE.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>NestedComposition/ClassE.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/N_OwnedEntity.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/N_OwnedEntity.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
-      <CorrelationId>Intent.Entities.DomainEntityState#84e2e545-10be-4229-8d85-bdb479ff61c6</CorrelationId>
+      <CorrelationId>Intent.Entities.DomainEntity#23a3df88-4a4b-413e-9baf-805e03736b4c</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedComposition/ClassEState.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>NestedComposition/ClassEState.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/N_OwnedEntityAssociationA.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/N_OwnedEntityAssociationA.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
-      <CorrelationId>Intent.Entities.DomainEntityInterface#ac315ad3-af1a-4809-98e2-97bd54f7593f</CorrelationId>
+      <CorrelationId>Intent.Entities.DomainEntityState#23a3df88-4a4b-413e-9baf-805e03736b4c</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedComposition/IClassA.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>NestedComposition/IClassA.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/N_OwnedEntityAssociationAState.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/N_OwnedEntityAssociationAState.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
-      <CorrelationId>Intent.Entities.DomainEntityInterface#012ac484-4858-45b9-ab8d-3c0e32fa2e73</CorrelationId>
+      <CorrelationId>Intent.Entities.DomainEntity#9eefa307-e78a-4572-b157-73452f611475</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedComposition/IClassB.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>NestedComposition/IClassB.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/N_OwnedEntityAssociationB.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/N_OwnedEntityAssociationB.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
-      <CorrelationId>Intent.Entities.DomainEntityInterface#322ab6a2-4ab3-4e13-9e44-354dcc333c92</CorrelationId>
+      <CorrelationId>Intent.Entities.DomainEntityState#9eefa307-e78a-4572-b157-73452f611475</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedComposition/IClassC.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>NestedComposition/IClassC.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/N_OwnedEntityAssociationBState.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/N_OwnedEntityAssociationBState.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
-      <CorrelationId>Intent.Entities.DomainEntityInterface#f6cfbb0c-08c4-4b57-bff0-e57125782700</CorrelationId>
+      <CorrelationId>Intent.Entities.DomainEntity#758e8032-b244-4090-8639-e09f3d5ee78d</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedComposition/IClassD.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>NestedComposition/IClassD.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/N_OwnedEntityAssociationC.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/N_OwnedEntityAssociationC.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
-      <CorrelationId>Intent.Entities.DomainEntityInterface#84e2e545-10be-4229-8d85-bdb479ff61c6</CorrelationId>
+      <CorrelationId>Intent.Entities.DomainEntityState#758e8032-b244-4090-8639-e09f3d5ee78d</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedComposition/IClassE.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>NestedComposition/IClassE.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/N_OwnedEntityAssociationCState.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/N_OwnedEntityAssociationCState.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
+      <CorrelationId>Intent.Entities.DomainEntity#5484d871-2581-403a-ba6a-bd9ce5302049</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/N_OwnedEntityAssociationD.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/N_OwnedEntityAssociationD.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
+      <CorrelationId>Intent.Entities.DomainEntityState#5484d871-2581-403a-ba6a-bd9ce5302049</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/N_OwnedEntityAssociationDState.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/N_OwnedEntityAssociationDState.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>65b9bb63-2303-46c4-982a-b49d8825e7d0</ProjectId>
+      <CorrelationId>Intent.Entities.DomainEntityState#1e0753f5-8c82-41da-93e2-f8b2dc9b93dd</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../EfCoreTestSuite.CosmosDb.IntentGenerated/Entities/NestedAssociations/N_OwnedEntityState.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>NestedAssociations/N_OwnedEntityState.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="5b0dd48b-6154-47a4-9140-b49c8956b737">
+  <sourceEnd id="c6d10c62-081e-4d5d-b700-c5cda2bc4160" type="Comment Source End" typeId="7e98213c-4a9c-4d6f-98fc-f185948cc9e8">
+    <name>Relationship not supported: many-to-many</name>
+    <display>Relationship not supported: many-to-many: Relationship not supported: many-to-many</display>
+    <order>5</order>
+    <typeReference id="f89bc8b7-45f1-43eb-8354-577b011395e0">
+      <typeId>81b28f90-31d4-4152-9da6-695d3783c295</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Domain</typePackageName>
+      <typePackageId>9e512d5a-048e-470d-ae7b-b02162bf1b20</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+  </sourceEnd>
+  <targetEnd id="5b0dd48b-6154-47a4-9140-b49c8956b737" type="Comment Target End" typeId="b7edce45-ccf0-47ed-b79f-86d5145c9f62">
+    <name>N_OwnedEntity</name>
+    <display>N_OwnedEntity: N_OwnedEntity</display>
+    <order>0</order>
+    <typeReference id="7fbb291a-2bf7-4e56-b738-f4dab21cca60">
+      <typeId>1e0753f5-8c82-41da-93e2-f8b2dc9b93dd</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>Domain</typePackageName>
+      <typePackageId>9e512d5a-048e-470d-ae7b-b02162bf1b20</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+  </targetEnd>
+  <associationType>Comment Association</associationType>
+  <associationTypeId>5264c135-e856-468d-8bd7-154b75842256</associationTypeId>
+  <stereotypes />
+</association>

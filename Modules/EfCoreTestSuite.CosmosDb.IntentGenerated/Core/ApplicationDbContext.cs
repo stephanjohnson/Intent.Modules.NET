@@ -5,7 +5,7 @@ using EfCoreTestSuite.CosmosDb.IntentGenerated.DependencyInjection;
 using EfCoreTestSuite.CosmosDb.IntentGenerated.Entities;
 using EfCoreTestSuite.CosmosDb.IntentGenerated.Entities.Associations;
 using EfCoreTestSuite.CosmosDb.IntentGenerated.Entities.InheritanceAssociations;
-using EfCoreTestSuite.CosmosDb.IntentGenerated.Entities.NestedComposition;
+using EfCoreTestSuite.CosmosDb.IntentGenerated.Entities.NestedAssociations;
 using EfCoreTestSuite.CosmosDb.IntentGenerated.Entities.Polymorphic;
 using Intent.RoslynWeaver.Attributes;
 using Microsoft.EntityFrameworkCore;
@@ -32,7 +32,6 @@ namespace EfCoreTestSuite.CosmosDb.IntentGenerated.Core
         public DbSet<B_OptionalAggregate> B_OptionalAggregates { get; set; }
         public DbSet<B_OptionalDependent> B_OptionalDependents { get; set; }
         public DbSet<C_RequiredComposite> C_RequiredComposites { get; set; }
-        public DbSet<ClassA> ClassAs { get; set; }
         public DbSet<ConcreteBaseClass> ConcreteBaseClasses { get; set; }
         public DbSet<ConcreteBaseClassAssociated> ConcreteBaseClassAssociateds { get; set; }
         public DbSet<D_MultipleDependent> D_MultipleDependents { get; set; }
@@ -51,6 +50,9 @@ namespace EfCoreTestSuite.CosmosDb.IntentGenerated.Core
         public DbSet<J_RequiredDependent> J_RequiredDependents { get; set; }
         public DbSet<K_SelfReference> K_SelfReferences { get; set; }
         public DbSet<M_SelfReferenceBiNav> M_SelfReferenceBiNavs { get; set; }
+        public DbSet<N_NestedOwnedAssocationOwner> N_NestedOwnedAssocationOwners { get; set; }
+        public DbSet<N_OwnedEntityAssociationA> N_OwnedEntityAssociationAs { get; set; }
+        public DbSet<N_OwnedEntityAssociationB> N_OwnedEntityAssociationBs { get; set; }
         public DbSet<Poly_BaseClassNonAbstract> Poly_BaseClassNonAbstracts { get; set; }
         public DbSet<Poly_ConcreteA> Poly_ConcreteAs { get; set; }
         public DbSet<Poly_ConcreteB> Poly_ConcreteBs { get; set; }
@@ -79,7 +81,6 @@ namespace EfCoreTestSuite.CosmosDb.IntentGenerated.Core
             modelBuilder.ApplyConfiguration(new B_OptionalAggregateConfiguration());
             modelBuilder.ApplyConfiguration(new B_OptionalDependentConfiguration());
             modelBuilder.ApplyConfiguration(new C_RequiredCompositeConfiguration());
-            modelBuilder.ApplyConfiguration(new ClassAConfiguration());
             modelBuilder.ApplyConfiguration(new ConcreteBaseClassConfiguration());
             modelBuilder.ApplyConfiguration(new ConcreteBaseClassAssociatedConfiguration());
             modelBuilder.ApplyConfiguration(new D_MultipleDependentConfiguration());
@@ -98,6 +99,9 @@ namespace EfCoreTestSuite.CosmosDb.IntentGenerated.Core
             modelBuilder.ApplyConfiguration(new J_RequiredDependentConfiguration());
             modelBuilder.ApplyConfiguration(new K_SelfReferenceConfiguration());
             modelBuilder.ApplyConfiguration(new M_SelfReferenceBiNavConfiguration());
+            modelBuilder.ApplyConfiguration(new N_NestedOwnedAssocationOwnerConfiguration());
+            modelBuilder.ApplyConfiguration(new N_OwnedEntityAssociationAConfiguration());
+            modelBuilder.ApplyConfiguration(new N_OwnedEntityAssociationBConfiguration());
             modelBuilder.ApplyConfiguration(new Poly_BaseClassNonAbstractConfiguration());
             modelBuilder.ApplyConfiguration(new Poly_ConcreteAConfiguration());
             modelBuilder.ApplyConfiguration(new Poly_ConcreteBConfiguration());

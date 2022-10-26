@@ -318,56 +318,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>ClassE.cs</DependentUpon>
     </Compile>
-    <Compile Update="Entities\NestedComposition\ClassAState.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ClassA.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Entities\NestedComposition\ClassBState.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ClassB.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Entities\NestedComposition\ClassCState.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ClassC.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Entities\NestedComposition\ClassDState.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ClassD.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Entities\NestedComposition\ClassEState.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ClassE.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Entities\NestedComposition\IClassA.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ClassA.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Entities\NestedComposition\IClassB.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ClassB.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Entities\NestedComposition\IClassC.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ClassC.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Entities\NestedComposition\IClassD.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ClassD.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Entities\NestedComposition\IClassE.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ClassE.cs</DependentUpon>
-    </Compile>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Compile Update="Entities\WeirdClassState.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -593,6 +553,186 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>DerivedClassForConcreteAssociated.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\Associations\N_NestedOwnedAssocationOwnerState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_NestedOwnedAssocationOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\Associations\N_OwnedEntityState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\Associations\N_OwnedEntityAssociationAState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationA.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\Associations\N_OwnedEntityAssociationBState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationB.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\Associations\N_OwnedEntityAssociationCState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationC.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\Associations\N_OwnedEntityAssociationDState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationD.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\Associations\IN_NestedOwnedAssocationOwner.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_NestedOwnedAssocationOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\Associations\IN_OwnedEntity.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\Associations\IN_OwnedEntityAssociationA.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationA.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\Associations\IN_OwnedEntityAssociationB.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationB.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\Associations\IN_OwnedEntityAssociationC.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationC.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\Associations\IN_OwnedEntityAssociationD.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationD.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedComposition\N_NestedOwnedAssocationOwnerState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_NestedOwnedAssocationOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedComposition\N_OwnedEntityState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedComposition\N_OwnedEntityAssociationAState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationA.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedComposition\N_OwnedEntityAssociationBState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationB.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedComposition\N_OwnedEntityAssociationCState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationC.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedComposition\N_OwnedEntityAssociationDState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationD.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedComposition\IN_NestedOwnedAssocationOwner.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_NestedOwnedAssocationOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedComposition\IN_OwnedEntity.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedComposition\IN_OwnedEntityAssociationA.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationA.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedComposition\IN_OwnedEntityAssociationB.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationB.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedComposition\IN_OwnedEntityAssociationC.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationC.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedComposition\IN_OwnedEntityAssociationD.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationD.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedAssociations\N_NestedOwnedAssocationOwnerState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_NestedOwnedAssocationOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedAssociations\N_OwnedEntityState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedAssociations\N_OwnedEntityAssociationAState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationA.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedAssociations\N_OwnedEntityAssociationBState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationB.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedAssociations\N_OwnedEntityAssociationCState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationC.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedAssociations\N_OwnedEntityAssociationDState.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationD.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedAssociations\IN_NestedOwnedAssocationOwner.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_NestedOwnedAssocationOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedAssociations\IN_OwnedEntity.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedAssociations\IN_OwnedEntityAssociationA.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationA.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedAssociations\IN_OwnedEntityAssociationB.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationB.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedAssociations\IN_OwnedEntityAssociationC.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationC.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Entities\NestedAssociations\IN_OwnedEntityAssociationD.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>N_OwnedEntityAssociationD.cs</DependentUpon>
     </Compile>
     
     

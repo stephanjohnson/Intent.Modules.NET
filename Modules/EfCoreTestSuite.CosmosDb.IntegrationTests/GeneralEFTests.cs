@@ -1,7 +1,5 @@
 ﻿using EfCoreTestSuite.CosmosDb.IntentGenerated.Core;
-using Microsoft.EntityFrameworkCore;
 using Xunit;
-using Xunit.Abstractions;
 using EfCoreTestSuite.CosmosDb.IntentGenerated.Entities.Associations;
 
 namespace EfCoreTestSuite.CosmosDb.IntegrationTests;
