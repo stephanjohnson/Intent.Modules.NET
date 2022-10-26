@@ -424,7 +424,7 @@ namespace Intent.Modules.EntityFrameworkCore.Templates.EntityTypeConfiguration
                         _ownedTypeConfigMethods.Add(@$"
         public void Configure{associationEnd.Name.ToPascalCase()}(OwnedNavigationBuilder<{GetOwnerEntity(associationEnd)}, {GetTypeName((IElement)associationEnd.Element)}> builder)
         {{
-            builder.WithOwner({(associationEnd.OtherEnd().IsNavigable ? $"x => x.{associationEnd.OtherEnd().Name.ToPascalCase()}" : "")}){(!IsValueObject(associationEnd.Element) && !DoesHaveCosmosCompositeKey() ? $".HasForeignKey({GetForeignKeyLambda(associationEnd)})":string.Empty)};{string.Join(@"
+            builder.WithOwner({(associationEnd.OtherEnd().IsNavigable ? $"x => x.{associationEnd.OtherEnd().Name.ToPascalCase()}" : "")}){(ShouldHaveForeignKeyConfiguration(associationEnd) ? $".HasForeignKey({GetForeignKeyLambda(associationEnd)})":string.Empty)};{string.Join(@"
             ", GetTypeConfiguration((IElement)associationEnd.Element))}
         }}");
                         statements.Add($"builder.OwnsOne(x => x.{associationEnd.Name.ToPascalCase()}, Configure{associationEnd.Name.ToPascalCase()})" +
@@ -485,7 +485,7 @@ namespace Intent.Modules.EntityFrameworkCore.Templates.EntityTypeConfiguration
                         _ownedTypeConfigMethods.Add(@$"
         public void Configure{associationEnd.Name.ToPascalCase()}(OwnedNavigationBuilder<{GetOwnerEntity(associationEnd)}, {GetTypeName((IElement)associationEnd.Element)}> builder)
         {{
-            builder.WithOwner({(associationEnd.OtherEnd().IsNavigable ? $"x => x.{associationEnd.OtherEnd().Name.ToPascalCase()}" : "")}){(!IsValueObject(associationEnd.Element) && !DoesHaveCosmosCompositeKey() ? $".HasForeignKey({GetForeignKeyLambda(associationEnd)})" : "")};{string.Join(@"
+            builder.WithOwner({(associationEnd.OtherEnd().IsNavigable ? $"x => x.{associationEnd.OtherEnd().Name.ToPascalCase()}" : "")}){(ShouldHaveForeignKeyConfiguration(associationEnd) ? $".HasForeignKey({GetForeignKeyLambda(associationEnd)})" : string.Empty)};{string.Join(@"
             ", GetTypeConfiguration((IElement)associationEnd.Element))}
         }}");
                         return $@"
@@ -534,12 +534,40 @@ namespace Intent.Modules.EntityFrameworkCore.Templates.EntityTypeConfiguration
             ", statements)};";
         }
 
-        private bool DoesHaveCosmosCompositeKey()
-        { 
-            return ExecutionContext.Settings.GetDatabaseSettings().DatabaseProvider().IsCosmos()
-                 && Model.GetExplicitPrimaryKey().Count == 0 
-                 && HasIncomingGeneralization(Model)
-                 && Model.ParentClass == null;
+        private bool ShouldHaveForeignKeyConfiguration(AssociationEndModel associationEnd)
+        {
+            if (IsValueObject(associationEnd.Element))
+            {
+                return false;
+            }
+
+            // Special cases for Cosmos DB providers
+            if (ExecutionContext.Settings.GetDatabaseSettings().DatabaseProvider().IsCosmos())
+            {
+                // Don't give foreign key configuration to composite entities
+                // from root-level inheritance classes
+                if (Model.GetExplicitPrimaryKey().Count == 0
+                    && HasIncomingGeneralization(Model)
+                    && Model.ParentClass == null)
+                {
+                    return false;
+                }
+
+                // Composite entities should not have any foreign key configuration
+                // applied to them since they are composed inside another entity for
+                // a Cosmos DB document since by convention the FK properties match
+                // the shadow properties used for foreign key references in EF.
+                // One-to-one is the exception where we need to override the property
+                // used for foreign keys. If the class is called Plan and it has a PlanType
+                // that is one-to-one, PlanType shouldn't need a separate property called
+                // PlanId, but instead can use the Id property.
+                if (!associationEnd.Association.IsOneToOne())
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
         
         private string GetOwnerEntity(AssociationEndModel associationEnd)

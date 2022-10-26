@@ -30,7 +30,7 @@ namespace EfCoreTestSuite.CosmosDb.IntentGenerated.Core
 
         public void ConfigureN_OwnedEntityAssociationCS(OwnedNavigationBuilder<N_OwnedEntity, N_OwnedEntityAssociationC> builder)
         {
-            builder.WithOwner().HasForeignKey(x => x.N_OwnedEntityId);
+            builder.WithOwner();
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.AssociationAttr)
@@ -48,7 +48,7 @@ namespace EfCoreTestSuite.CosmosDb.IntentGenerated.Core
 
         public void ConfigureN_OwnedEntities(OwnedNavigationBuilder<N_NestedOwnedAssocationOwner, N_OwnedEntity> builder)
         {
-            builder.WithOwner(x => x.N_NestedOwnedAssocationOwner).HasForeignKey(x => x.N_NestedOwnedAssocationOwnerId);
+            builder.WithOwner(x => x.N_NestedOwnedAssocationOwner);
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.OwnedAttr)
