@@ -1,3 +1,8 @@
+### Version 4.0.1
+
+- Update: Updates due to underlying code changes.
+- Update: Updated Module version of .NET to 6.
+
 ### Version 3.3.3
 
 - Fixed: Publishing from Consumer when Outbox pattern is None will no longer execute within the same transaction as the DB.
