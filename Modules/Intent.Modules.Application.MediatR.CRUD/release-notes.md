@@ -1,3 +1,7 @@
+### Version 4.0.1
+
+- New: Adds CRUD capabilities to Eventing modules.
+
 ### Version 3.3.12
 
 - Update: Refactored the CRUD script so that it is easier to read and to follow.
