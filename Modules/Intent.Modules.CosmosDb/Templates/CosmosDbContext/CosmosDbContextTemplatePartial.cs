@@ -3,7 +3,6 @@ using Intent.CosmosDb;
 using Intent.Engine;
 using Intent.Modules.Common;
 using Intent.Modules.Common.CSharp.Builder;
-using Intent.Modules.Common.CSharp.DependencyInjection;
 using Intent.Modules.Common.CSharp.Templates;
 using Intent.Modules.Common.Templates;
 using Intent.Modules.CosmosDb.Templates.CosmosDbUnitOfWorkInterface;
@@ -13,15 +12,15 @@ using Intent.Templates;
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.ModuleBuilder.CSharp.Templates.CSharpTemplatePartial", Version = "1.0")]
 
-namespace Intent.Modules.CosmosDb.Templates.ApplicationCosmosDbContext
+namespace Intent.Modules.CosmosDb.Templates.CosmosDbContext
 {
-    [IntentManaged(Mode.Fully, Body = Mode.Merge, Signature = Mode.Merge)]
-    public partial class ApplicationCosmosDbContextTemplate : CSharpTemplateBase<object>, ICSharpFileBuilderTemplate
+    [IntentManaged(Mode.Fully, Body = Mode.Merge)]
+    partial class CosmosDbContextTemplate : CSharpTemplateBase<object>, ICSharpFileBuilderTemplate
     {
-        public const string TemplateId = "Intent.CosmosDb.ApplicationCosmosDbContext";
+        public const string TemplateId = "Intent.CosmosDb.CosmosDbContext";
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
-        public ApplicationCosmosDbContextTemplate(IOutputTarget outputTarget, object model = null) : base(TemplateId, outputTarget, model)
+        public CosmosDbContextTemplate(IOutputTarget outputTarget, object model = null) : base(TemplateId, outputTarget, model)
         {
             AddNugetDependency(NugetPackages.MicrosoftAzureCosmos);
 
@@ -29,29 +28,33 @@ namespace Intent.Modules.CosmosDb.Templates.ApplicationCosmosDbContext
                 .AddUsing("System.Threading")
                 .AddUsing("System.Threading.Tasks")
                 .AddUsing("Microsoft.Azure.Cosmos")
-                .AddClass($"ApplicationCosmosDbContext", @class =>
+                .AddClass($"CosmosDbContext", @class =>
                 {
-                    @class.WithBaseType("CosmosDbContext");
                     @class.ImplementsInterface(GetTypeName(CosmosDbUnitOfWorkInterfaceTemplate.TemplateId));
-                    @class.AddConstructor(ctor =>
-                    {
-                        ctor.Static();
-                        ctor.AddStatement($"ApplyConfigurationsFromAssembly(typeof({@class.Name}).Assembly);");
-                    });
+
+                    @class.AddField("CosmosClient", "_cosmosClient", c => c.PrivateReadOnly());
+                    @class.AddField("string", "_databaseName", c => c.PrivateReadOnly());
+
                     @class.AddConstructor(ctor =>
                     {
                         ctor.AddParameter("CosmosClient", "cosmosClient");
                         ctor.AddParameter("string", "databaseName");
-                        ctor.AddParameter("CosmosDbContextOptions", "options", param => param.WithDefaultValue("null"));
                         ctor.CallsBase(b =>
                         {
                             b.AddArgument("cosmosClient");
                             b.AddArgument("databaseName");
-                            b.AddArgument("options");
                         });
-                        ctor.AddStatement("AcceptAllChangesOnSave = true;");
-                        ctor.AddStatement("AddCommand(() => null);");
+
+                        ctor.AddStatement("_cosmosClient = cosmosClient;");
+                        ctor.AddStatement("_databaseName = databaseName;");
                     });
+
+                    @class.AddMethod("Container", "GetContainer", method =>
+                    {
+                        method.AddParameter("string", "containerName");
+                        method.AddStatement("return _cosmosClient.GetContainer(_databaseName, containerName);");
+                    });
+
                     @class.AddMethod("Task<int>", $"SaveChangesAsync", method =>
                     {
                         method.Async();

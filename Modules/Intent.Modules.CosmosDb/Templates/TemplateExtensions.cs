@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using Intent.Modules.Common.Templates;
-using Intent.Modules.CosmosDb.Templates.ApplicationCosmosDbContext;
+using Intent.Modules.CosmosDb.Templates.CosmosDbContext;
 using Intent.Modules.CosmosDb.Templates.CosmosDbUnitOfWorkInterface;
 using Intent.Modules.CosmosDb.Templates.Integration.UnitOfWorkBehaviour;
 using Intent.RoslynWeaver.Attributes;
@@ -13,9 +13,10 @@ namespace Intent.Modules.CosmosDb.Templates
 {
     public static class TemplateExtensions
     {
-        public static string GetApplicationCosmosDbContextName<T>(this IntentTemplateBase<T> template)
+
+        public static string GetCosmosDbContextName<T>(this IntentTemplateBase<T> template)
         {
-            return template.GetTypeName(ApplicationCosmosDbContextTemplate.TemplateId);
+            return template.GetTypeName(CosmosDbContextTemplate.TemplateId);
         }
 
         public static string GetCosmosDbUnitOfWorkInterfaceName<T>(this IntentTemplateBase<T> template)

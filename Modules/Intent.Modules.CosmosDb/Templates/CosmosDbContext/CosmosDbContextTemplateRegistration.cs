@@ -11,16 +11,16 @@ using Intent.Templates;
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.ModuleBuilder.TemplateRegistration.SingleFileNoModel", Version = "1.0")]
 
-namespace Intent.Modules.CosmosDb.Templates.ApplicationCosmosDbContext
+namespace Intent.Modules.CosmosDb.Templates.CosmosDbContext
 {
     [IntentManaged(Mode.Merge, Body = Mode.Merge, Signature = Mode.Fully)]
-    public class ApplicationCosmosDbContextTemplateRegistration : SingleFileTemplateRegistration
+    public class CosmosDbContextTemplateRegistration : SingleFileTemplateRegistration
     {
-        public override string TemplateId => ApplicationCosmosDbContextTemplate.TemplateId;
+        public override string TemplateId => CosmosDbContextTemplate.TemplateId;
 
         public override ITemplate CreateTemplateInstance(IOutputTarget outputTarget)
         {
-            return new ApplicationCosmosDbContextTemplate(outputTarget);
+            return new CosmosDbContextTemplate(outputTarget);
         }
     }
 }

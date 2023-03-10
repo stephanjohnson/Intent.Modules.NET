@@ -7,7 +7,7 @@ using Intent.Modules.Common.CSharp.Templates;
 using Intent.Modules.Common.Plugins;
 using Intent.Modules.Common.Templates;
 using Intent.Modules.Constants;
-using Intent.Modules.CosmosDb.Templates.ApplicationCosmosDbContext;
+using Intent.Modules.CosmosDb.Templates.CosmosDbContext;
 using Intent.Modules.CosmosDb.Templates.CosmosDbUnitOfWorkInterface;
 using Intent.Plugins.FactoryExtensions;
 using Intent.RoslynWeaver.Attributes;
@@ -57,7 +57,7 @@ namespace Intent.Modules.CosmosDb.FactoryExtensions
 
         private string GetAppDbContext(ICSharpFileBuilderTemplate template)
         {
-            return template.GetTypeName(ApplicationCosmosDbContextTemplate.TemplateId);
+            return template.GetTypeName(CosmosDbContextTemplate.TemplateId);
         }
     }
 }

@@ -47,7 +47,7 @@ namespace Intent.Modules.CosmosDb.Repositories.Templates.CosmosRepositoryBase
 
                     @class.AddConstructor(ctor =>
                     {
-                        ctor.AddParameter(this.GetApplicationCosmosDbContextName(), "context")
+                        ctor.AddParameter(this.GetCosmosDbContextName(), "context")
                             .CallsBase(b => b.AddArgument("context"));
                         ctor.AddStatement("UnitOfWork = context;");
                     });
